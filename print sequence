@@ -1,0 +1,15 @@
+# Write a Python program to print
+# A
+# B B 
+# C C C 
+# D D D D 
+# E E E E E
+s = "ABCDE"
+
+for i in range(len(s)):
+  for j in range(i+1):
+    print(s[i],end='')
+    if i == j:
+      break
+    print(" ",end="")
+  print('')
