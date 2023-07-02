@@ -1,0 +1,6 @@
+# Write a Python program to read the range and display the numbers that are divisible by 3 and 5 within the range 
+st = int(input())
+en = int(input())
+for  i  in range(st,en+1):
+  if (i%3 == 0) and (i%5 == 0):
+    print(i)
