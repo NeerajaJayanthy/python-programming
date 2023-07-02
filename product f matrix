@@ -1,0 +1,26 @@
+#Write a Python program to read two (n * m) matrices and print product 
+r = int(input("Enter the number of rows:"))
+c = int(input("Enter the number of columns:"))
+A = []
+print("\nEnter elements of first matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  A.append(a) 
+B = []
+print("\nEnter elements of Second matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  B.append(a) 
+C=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(A)):   
+  for j in range(len(A[0])):  
+    C[i][j] = A[i][j] * B[i][j]
+print("\nTheir product is:-")
+for i in range(r):
+  for j in range(c):
+    print(C[i][j], end = " ")
+  print()
